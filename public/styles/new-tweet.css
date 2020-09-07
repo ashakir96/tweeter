@@ -1,0 +1,35 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.division {
+  width: 100%
+}
+
+button {
+  font-family: "Bungee";
+  font-size: 20px;
+  padding: .5em;
+  background-color:  #4056A1;
+  color: #FFFF;
+  margin-top: 15px;
+}
+
+.counter {
+  font-family: "Bungee";
+  font-size: 20px;
+  margin-top: 15px;
+  float: right;
+}
+
+#tweet-text {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: black;
+  background-color: transparent;
+  width: 100%;
+}
