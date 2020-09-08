@@ -21,15 +21,17 @@ button {
   font-size: 20px;
   margin-top: 15px;
   float: right;
+  color: black;
+}
+
+.negativeTweet {
+  color: red;
 }
 
 #tweet-text {
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
-  border-bottom-color: black;
+  border: 0;
+  border-bottom: 5px solid;
   background-color: transparent;
   width: 100%;
+  resize: none;
 }

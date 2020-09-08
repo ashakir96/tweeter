@@ -1,4 +1,4 @@
-header {
+body > header {
   height: 400px;
   width: 100%;
   background-color: #38a800;
@@ -17,13 +17,5 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-}
-
-.bolded {
-  font-weight: bold;
-}
-
-.unbolded {
-  font-weight: 300;
+  color: black;
 }
