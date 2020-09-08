@@ -39,8 +39,6 @@ article > hr {
 }
 
 footer {
-  display: flex;
-  align-items: flex-end;
   font-size: 0.75em;
   font-weight: bold;
   display: flex;
