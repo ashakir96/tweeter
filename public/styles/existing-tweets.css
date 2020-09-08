@@ -1,0 +1,48 @@
+article{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 2%;
+  border: 3px solid;
+}
+
+article:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+}
+
+.random-tweeter {
+  display: flex;
+  flex-direction: row;
+}
+
+header > img {
+  width: 50px;
+  height: 50px;
+}
+
+article .tag {
+  visibility: hidden;
+}
+
+article:hover .tag{
+  visibility: visible;
+}
+
+.handle {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+article > hr {
+  border-bottom: 3px solid;
+}
+
+footer {
+  display: flex;
+  align-items: flex-end;
+  font-size: 0.75em;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
