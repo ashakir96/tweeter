@@ -30,6 +30,7 @@ button {
 
 #tweet-text {
   border: 0;
+  padding: 2%;
   border-bottom: 5px solid;
   background-color: transparent;
   width: 100%;
