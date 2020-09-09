@@ -15,10 +15,11 @@
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/existing-tweets.css" type="text/css" />
-
-
+    
+    
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js" integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg==" crossorigin="anonymous"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -30,7 +31,7 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>Tweeter</span>
-      <div><strong>Write</strong> a new Tweet</div>
+      <div id="toggle"><strong>Write</strong> a new Tweet</div>
     </nav>
 
     <header>
@@ -45,31 +46,20 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+      <section id="new-tweet" class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form method="POST" action='/tweets'>
+        <form method="POST" action='/tweets' id="post-tweet">
           <label for="tweet-text"></label>
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class="division">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
+          <h2 id="error"> &#10069 Start Typing OR Please Stop Typing</h2>
         </form>
-
-        <article class= "tweets"> 
-          <header class="random-tweeter">
-              <img src="https://i.imgur.com/73hZDYK.png">
-              <div class="handle">
-                <span> Ammar Shakir</span> 
-                <span class="tag">@Ammar</span>
-              </div>
-          </header>
-          <p class="existing-text"> Text, this is not a drill </p>
-          <hr>
-          <footer>10 days <span class="symbols"> &#127988 	&#128257 	&#128153</span></footer>
-        </article>
-
       </section>
+
+      <section id="tweets-container"> </section>
     </main>
   </body>
 </html>
