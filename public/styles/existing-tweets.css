@@ -6,7 +6,11 @@ article{
 }
 
 article:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2); 
+}
+
+#toggle:hover {
+  text-shadow: 5px 5px #000000;
 }
 
 .random-tweeter {
@@ -27,6 +31,14 @@ article:hover .tag{
   visibility: visible;
 }
 
+.symbols {
+  visibility: hidden;
+}
+
+article:hover .symbols{
+  visibility: visible;
+}
+
 .handle {
   display: flex;
   flex-grow: 1;
@@ -43,4 +55,14 @@ footer {
   font-weight: bold;
   display: flex;
   justify-content: space-between;
+}
+
+#error {
+  padding: 2%;
+  border: 2px solid;
+  border-color: red;
+  color:  white;
+  background-color: red;
+  width: 50%;
+  margin: auto;
 }
