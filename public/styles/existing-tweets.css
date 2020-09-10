@@ -3,6 +3,7 @@ article{
   margin-bottom: 50px;
   padding: 2%;
   border: 3px solid;
+  background-color: white;
 }
 
 article:hover {
