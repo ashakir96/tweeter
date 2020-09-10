@@ -34,6 +34,7 @@ $(document).ready(function() {
 
   $("#toggle").on('click', () => {
     $(".new-tweet").slideToggle(1000);
+    $("#tweet-text").focus();
   })
 
   const loadTweets = () => {
@@ -48,7 +49,7 @@ $(document).ready(function() {
   $postTweet.on('submit', function (event) {
     event.preventDefault();
     if ($("#tweet-text").val().length >= 140 || $("#tweet-text").val() === "") {
-      $("#error").show(1000);
+      $("#error").slideDown(1000);
       return;
     }
 
