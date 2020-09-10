@@ -2,7 +2,17 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
+Click the "write tweet" key to tweet something! Make sure your tweets are under 140 characters and you actually tweet something, or it will produce an error message.
+
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+
+## Screenshots
+
+!["Main Page"](https://github.com/ashakir96/tweeter/blob/master/docs/main-page.png?raw=true)
+!["New Tweet"](https://github.com/ashakir96/tweeter/blob/master/docs/new-tweet.png?raw=true)
+!["Posting a new Tweet"](https://github.com/ashakir96/tweeter/blob/master/docs/posting-tweet.png?raw=true)
+!["Error Message"](https://github.com/ashakir96/tweeter/blob/master/docs/error-message.png?raw=true)
+!["Responvise Page"](https://github.com/ashakir96/tweeter/blob/master/docs/responsvie-version.png?raw=true)
 
 ## Getting Started
 
@@ -15,3 +25,6 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- Body-parser
+- Chance
+- Md5
