@@ -10,13 +10,9 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
-
 body {
   color: #545149;
-  background-color: white;
+  background-color: beige;
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -26,10 +22,19 @@ main {
   margin: auto;
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: beige;
   flex-direction: column;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+
+ @media only screen and (min-width: 1024px) {
+
+  .display {
+    display: flex;
+    flex-direction: row;
+    margin-top: 87px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+}
