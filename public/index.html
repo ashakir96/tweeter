@@ -25,36 +25,38 @@
       <div id="toggle"><strong>Write</strong> a new Tweet! &#8650</div>
     </nav>
     
-    <header>
-      <div class="profile">
-        <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div class="name">
-        <div><strong>Ammar</strong> Shakir</div>
-      </div>
-    </header>
-    
-    <!-- Page-specific (main) content here -->
-    <main class="container">
+    <div class="display">
+      <header class="profile">
+        <div>
+          <img src="/images/profile-hex.png"> 
+        </div>
+        <br>
+        <div >
+          <div><strong>Ammar</strong> Shakir</div>
+        </div>
+      </header>
       
-      <section id="new-tweet" class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form method="POST" action='/tweets' id="post-tweet">
-          <label for="tweet-text"></label>
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-          <div class="division">
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-          <h2 id="error"> &#10069 Start Typing OR Please Stop Typing</h2>
-        </form>
-      </section>
-      
-      <section id="tweets-container"> </section>
-
-    </main>
-
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        
+        <section id="new-tweet" class="new-tweet">
+          <h2>Compose Tweet</h2>
+          <form method="POST" action='/tweets' id="post-tweet">
+            <label for="tweet-text"></label>
+            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+            <div class="division">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+            <h2 id="error"> &#10069 Start Typing OR Please Stop Typing</h2>
+          </form>
+        </section>
+        
+        <!-- Existing tweets-->
+        <section id="tweets-container"> </section>
+        
+      </main>
+    </div>
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js" integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg==" crossorigin="anonymous"></script>
