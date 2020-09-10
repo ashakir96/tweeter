@@ -15,37 +15,29 @@
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/existing-tweets.css" type="text/css" />
-    
-    
-    <!-- External JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js" integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg==" crossorigin="anonymous"></script>
 
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-    
   </head>
-
+  
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>Tweeter</span>
-      <div id="toggle"><strong>Write</strong> a new Tweet</div>
+      <div id="toggle"><strong>Write</strong> a new Tweet! &#8650</div>
     </nav>
-
+    
     <header>
       <div class="profile">
-          <img src="/images/profile-hex.png"> 
+        <img src="/images/profile-hex.png"> 
       </div>
       <br>
       <div class="name">
         <div><strong>Ammar</strong> Shakir</div>
       </div>
     </header>
-
+    
     <!-- Page-specific (main) content here -->
     <main class="container">
+      
       <section id="new-tweet" class="new-tweet">
         <h2>Compose Tweet</h2>
         <form method="POST" action='/tweets' id="post-tweet">
@@ -58,8 +50,18 @@
           <h2 id="error"> &#10069 Start Typing OR Please Stop Typing</h2>
         </form>
       </section>
-
+      
       <section id="tweets-container"> </section>
+
     </main>
+
+    <!-- External JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js" integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg==" crossorigin="anonymous"></script>
+  
+    <!-- App JS -->
+    <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
   </body>
-</html>
+  </html>
